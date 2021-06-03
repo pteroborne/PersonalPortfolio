@@ -261,3 +261,14 @@ textarea {
   }
 }
 
+section {
+  display: flex;
+  /* Align the text to the horizontal center */
+  justify-content: center;
+  /* Align the items to the vertical center */
+  align-items: center;
+  /* Set the minimum height */
+  min-height: 100vh;
+}
+
+/* My CSS Goes Here */
