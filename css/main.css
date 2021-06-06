@@ -271,4 +271,8 @@ section {
   min-height: 100vh;
 }
 
+#welcome-section {
+  flex-direction: column;
+}
+
 /* My CSS Goes Here */
