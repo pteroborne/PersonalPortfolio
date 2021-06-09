@@ -271,10 +271,14 @@ body, html {
 /* Parallax code recreated from w3schools tutorial */
 .parallax {
   background-image: url("/img/retrobackground.svg");
-  height: 100%;
+  background-color: navy;
   background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
+  padding-top: 100vh;
+  top:0;
 }
 
 section {
@@ -285,9 +289,29 @@ section {
   align-items: center;
   /* Set the minimum height */
   min-height: 100vh;
+  /*background: rgba(255, 255, 255, 0.5);*/
+  /* needs to be absolute to have the transparency to the background parallax */
+  position: absolute;
+  width: 100%;
+  color:#ffca3a;
+}
+
+.textbox {
+  border: 5px solid #ffca3a;
+  padding: 5px;
 }
 
 #welcome-section {
   flex-direction: column;
+  top: 0;
 }
 
+#projects {
+  flex-direction: column;
+  top: 105vh;
+}
+
+#about {
+  flex-direction: column;
+  top: 210vh;
+}
