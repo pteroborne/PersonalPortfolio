@@ -180,9 +180,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -263,8 +263,18 @@ textarea {
 
 /* My CSS Is Here */
 
-body {
+body, html {
+  /* Necessary for Parallax */
+  height: 100%;
+}
+
+/* Parallax code recreated from w3schools tutorial */
+.parallax {
   background-image: url("/img/retrobackground.svg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 section {
