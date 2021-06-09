@@ -293,12 +293,16 @@ section {
   /* needs to be absolute to have the transparency to the background parallax */
   position: absolute;
   width: 100%;
-  color:#ffca3a;
+  color:#ff3AD2;
 }
 
 .textbox {
   border: 5px solid #ffca3a;
+  box-shadow: 0 0 15px #ffca3a;
+  border-radius: 7px;
   padding: 5px;
+  text-shadow: 0 0 10px #ff3AD2;
+  text-align: center;
 }
 
 #welcome-section {
