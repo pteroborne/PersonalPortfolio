@@ -261,6 +261,12 @@ textarea {
   }
 }
 
+/* My CSS Is Here */
+
+body {
+  background-image: url("/img/retrobackground.svg");
+}
+
 section {
   display: flex;
   /* Align the text to the horizontal center */
@@ -275,4 +281,3 @@ section {
   flex-direction: column;
 }
 
-/* My CSS Goes Here */
