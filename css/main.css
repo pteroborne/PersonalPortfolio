@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Titillium+Web&display=swap');
+
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
@@ -266,6 +268,7 @@ textarea {
 body, html {
   /* Necessary for Parallax */
   height: 100%;
+  font-family: "Titillium Web", sans-serif;
 }
 
 /* Parallax code recreated from w3schools tutorial */
@@ -323,12 +326,14 @@ section {
   flex-direction: column;
   top: 105vh;
   justify-content: center;
+  font-size: 18px;
 }
 
 #about {
   flex-direction: column;
   top: 210vh;
   text-shadow: 0 0 10px #ff3AD2;
+  font-size: 18px;
 }
 
 .project-tile {
