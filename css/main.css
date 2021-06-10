@@ -281,6 +281,12 @@ body, html {
   top:0;
 }
 
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
 section {
   display: flex;
   /* Align the text to the horizontal center */
@@ -298,11 +304,13 @@ section {
 
 .textbox {
   border: 5px solid #ffca3a;
-  box-shadow: 0 0 15px #ffca3a;
+  box-shadow: 0 0 10px #ffca3a;
   border-radius: 7px;
   padding: 5px;
   text-shadow: 0 0 10px #ff3AD2;
   text-align: center;
+  min-height: 100px;
+  min-width: 100px;
 }
 
 #welcome-section {
@@ -313,9 +321,15 @@ section {
 #projects {
   flex-direction: column;
   top: 105vh;
+  justify-content: center;
 }
 
 #about {
   flex-direction: column;
   top: 210vh;
+}
+
+.project-tile {
+  text-align: center;
+  text-shadow: 0 0 10px #ff3AD2;
 }
