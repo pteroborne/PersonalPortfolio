@@ -310,7 +310,8 @@ section {
   text-shadow: 0 0 10px #ff3AD2;
   text-align: center;
   min-height: 100px;
-  min-width: 100px;
+  min-width: 200px;
+  background-color: rgba(0, 0, 147, 0.25);
 }
 
 #welcome-section {
@@ -327,6 +328,7 @@ section {
 #about {
   flex-direction: column;
   top: 210vh;
+  text-shadow: 0 0 10px #ff3AD2;
 }
 
 .project-tile {
