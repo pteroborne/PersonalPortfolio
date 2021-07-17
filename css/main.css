@@ -340,3 +340,27 @@ section {
   text-align: center;
   text-shadow: 0 0 10px #ff3AD2;
 }
+
+.card {
+  width: 18rem;
+}
+
+#main_accordion {
+  border: 5px solid #ffca3a;
+  box-shadow: 0 0 10px #ffca3a;
+  border-radius: 7px;
+  text-shadow: 0 0 .1rem #ff00c3;
+}
+
+.bg-cool {
+  background-color: rgba(108, 108, 255, 0.3) !important;
+  color: #ff52dd !important;
+}
+
+.accordion-collapse {
+  overflow-x: scroll;
+}
+
+.table {
+  color: #ff52dd !important;
+}
