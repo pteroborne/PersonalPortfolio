@@ -284,7 +284,7 @@ body, html {
   top:0;
 }
 
-@media only screen and (max-device-width: 1366px) {
+@media only screen and (max-device-width: 600px) {
   .parallax {
     background-attachment: scroll;
   }
@@ -312,8 +312,8 @@ section {
   padding: 5px;
   text-shadow: 0 0 10px #ff3AD2;
   text-align: center;
-  min-height: 100px;
-  min-width: 200px;
+  height: auto;
+  min-width: 10rem;
   background-color: rgba(0, 0, 147, 0.25);
 }
 
@@ -363,4 +363,8 @@ section {
 
 .table {
   color: #ff52dd !important;
+}
+
+a img {
+  width: 100%;
 }

@@ -1,54 +1,31 @@
-import {planets} from "./planets.js";
-import {species} from "./species.js";
-import {starships} from "./starships.js";
-import {vehicles} from "./vehicles.js";
+import {projects} from "./projects.js";
 
 
-function addThing(thing, selector, places) {
-  let table = document.querySelector(`#${selector}`);
-  let row = document.createElement('tr')
-  let values = Object.values(thing);
-  for (let i = 0; i < places; i++) {
-    let cell = document.createElement('td');
-    cell.innerText = values[i];
-    row.append(cell)
-  }
+// This section takes a list of projects and adds them as nice boxes in the portfolio page
+// Ideally instead of taking a hand-coded list, it would pull dynamically from an API, but I'm not making one for this class
+function addProject(project) {
+  let section = document.querySelector('#project-tiles');
+  let tile = document.createElement('div');
+  tile.className = 'project-tile m2';
+  let box = document.createElement('div');
+  box.className = 'textbox';
+  let link = document.createElement('a');
+  link.href = project.URL;
+  link.target = "_blank"
+  let img = document.createElement('img');
+  img.src = project.image;
+  img.alt = project.name;
+  let title = document.createElement('span');
+  title.innerText = project.name;
 
-  table.append(row)
+  link.append(img);
+  box.append(link);
+  tile.append(box, title);
+  section.append(tile);
 }
 
-function addSpecies(species) {
-  let table = document.querySelector('#species_table');
-  let row = document.createElement('tr')
-  let values = Object.values(species);
-  for (let i = 0; i < 8; i++) {
-    let cell = document.createElement('td');
-    cell.innerText = values[i];
-    row.append(cell)
-  }
-
-  let cell = document.createElement('td');
-  cell.innerText = values[9];
-  row.append(cell)
-
-  table.append(row)
-}
-
-planets.forEach(planet => {
-  addThing(planet, 'planet_table', 8)
-})
-
-species.forEach(species => {
-  addSpecies(species)
-})
-
-starships.forEach(starship => {
-  addThing(starship, 'starships_table', 13)
-})
-
-vehicles.forEach(vehicle => {
-  addThing(vehicle, 'vehicle_table', 11)
-})
+projects.forEach(project => {addProject(project)})
 
 
 console.log('running')
+
